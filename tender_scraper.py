@@ -1,5 +1,3 @@
-from multiprocessing.dummy import Array
-
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -81,7 +79,7 @@ try:
         dergi_dropdown = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "selectDergi"))
         )
-        Select(dergi_dropdown).select_by_value("1161") # DERGİ SAYISI (1791) [Magazine Issue Number = Option Value + 630]
+        Select(dergi_dropdown).select_by_value("1161") # Magazine Issue Number (1791) [Magazine Issue Number = Option Value + 630]
         time.sleep(4) 
 
         ilk_filtre_linki = WebDriverWait(driver, 10).until(
