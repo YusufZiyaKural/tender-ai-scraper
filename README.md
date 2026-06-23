@@ -43,6 +43,8 @@ pip install undetected-chromedriver selenium beautifulsoup4 pandas google-genai 
 * Replace it with your actual API key (or configure it via environment variables).
 
 
+⚠️ *IMPORTANT*: As Google Chrome updates automatically, you may encounter a session not created error. If this happens, please open the script and update the version_main parameter in the uc.Chrome() initialization to match your current Chrome browser version (e.g., version_main=149).
+
 
 ## Usage
 
