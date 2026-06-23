@@ -23,7 +23,7 @@ options.add_argument("--no-first-run")
 options.add_argument("--no-default-browser-check")
 options.add_argument("--disable-popup-blocking")
 
-driver = uc.Chrome(options=options, version_main=147)
+driver = uc.Chrome(options=options, version_main=147) ## IMPORTANT: As Chrome updates, you must update this value to match your current browser version (e.g., 149, 150).
 veri_listesi = []
 
 # Continue from the completed part (checkpoint)
